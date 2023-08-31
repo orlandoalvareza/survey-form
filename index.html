@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>digitalDre@ms Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="survey-header">
+        <h1 id="title">digitalDre@ms Survey Form</h1>
+        <p id="description">
+          Thank you for choosing our electronics business! We value your
+          feedback and would appreciate a few minutes of your time to help us
+          improve our products and services.
+        </p>
+      </div>
+      <div class="survey-content">
+        <form
+          id="survey-form"
+          action="https://digitalDreams.com/survey"
+          method="post"
+        >
+          <section>
+            <h3>Demographic Information</h3>
+            <div class="form-group">
+              <label id="name-label" for="name"
+                >Name:
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </label>
+            </div>
+            <div class="form-group">
+              <label id="email-label" for="email"
+                >Email:
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </label>
+            </div>
+            <div class="form-group">
+              <label id="number-label" for="number"
+                >Age:
+                <input
+                  type="number"
+                  id="number"
+                  name="number"
+                  min="18"
+                  max="120"
+                  placeholder="Enter your age"
+                  required
+                />
+              </label>
+            </div>
+            <div class="form-group">
+              <label for="dropdown"
+                >What is your gender?
+                <select id="dropdown" name="gender">
+                  <option value="">(select one)</option>
+                  <option value="1">Male</option>
+                  <option value="2">Female</option>
+                  <option value="3">I don't identify with any</option>
+                  <option value="4">Prefer not to say</option>
+                </select>
+              </label>
+            </div>
+          </section>
+          <section>
+            <h3>Product Experience</h3>
+            <div class="form-group">
+              <p class="question">
+                How satisfied are you with your recent purchase?
+              </p>
+              <label for="very-unsatisfied">
+                <input
+                  type="radio"
+                  id="very-unsatisfied"
+                  name="satisfied"
+                  value="very-unsatisfied"
+                />
+                Very unsatisfied
+              </label>
+              <label for="unsatisfied">
+                <input
+                  type="radio"
+                  id="unsatisfied"
+                  name="satisfied"
+                  value="unsatisfied"
+                />
+                Unsatisfied
+              </label>
+              <label for="neutral">
+                <input
+                  type="radio"
+                  id="neutral"
+                  name="satisfied"
+                  value="neutral"
+                />
+                Neutral
+              </label>
+              <label for="satisfied">
+                <input
+                  type="radio"
+                  id="satisfied"
+                  name="satisfied"
+                  value="satisfied"
+                />
+                Satisfied
+              </label>
+              <label for="very-satisfied">
+                <input
+                  type="radio"
+                  id="very-satisfied"
+                  name="satisfied"
+                  value="very-satisfied"
+                />
+                Very satisfied
+              </label>
+            </div>
+
+            <div class="form-group">
+              <p class="question">
+                What would you like to see improved?
+                <span class="hint">(Check all that apply)</span>
+              </p>
+              <label for="product-quality">
+                <input
+                  type="checkbox"
+                  id="product-quality"
+                  name="improvement"
+                  value="product-quality"
+                />
+                Product quality
+              </label>
+              <label for="pricing-options">
+                <input
+                  type="checkbox"
+                  id="pricing-options"
+                  name="improvement"
+                  value="pricing-options"
+                />
+                Pricing options
+              </label>
+              <label for="customer-service-responsiveness">
+                <input
+                  type="checkbox"
+                  id="customer-service-responsiveness"
+                  name="improvement"
+                  value="customer-service-responsiveness"
+                />
+                Customer service responsiveness
+              </label>
+              <label for="product-variety">
+                <input
+                  type="checkbox"
+                  id="product-variety"
+                  name="improvement"
+                  value="product-variety"
+                />
+                Product variety and selection
+              </label>
+              <label for="website">
+                <input
+                  type="checkbox"
+                  id="website"
+                  name="improvement"
+                  value="website"
+                />
+                Website user experience
+              </label>
+            </div>
+          </section>
+          <section>
+            <h3>Customer Service</h3>
+            <div class="form-group">
+              <label for="customer-service"
+                >How would you describe our customer service responsiveness?
+                <select id="customer-service" name="customer-service">
+                  <option value="">(select one)</option>
+                  <option value="1">Excellent</option>
+                  <option value="2">Good</option>
+                  <option value="3">Average</option>
+                  <option value="4">Poor</option>
+                  <option value="5">Very poor</option>
+                </select>
+              </label>
+            </div>
+            <div class="form-group">
+              <label for="feedback">
+                Any feedback or suggestions?
+                <textarea
+                  id="feedback"
+                  name="feedback"
+                  rows="8"
+                  cols="50"
+                  placeholder="We appreciate your feedback. Please feel free to share any additional comments or suggestions here."
+                ></textarea>
+              </label>
+            </div>
+          </section>
+          <button type="submit" id="submit">
+            Send My Awesomely Helpful Feedback!
+          </button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
